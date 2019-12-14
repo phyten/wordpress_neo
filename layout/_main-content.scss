@@ -1,0 +1,28 @@
+#main-content {
+  height: auto;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto;
+
+  > #sidebar {
+    width: calc(2 / 9 * 100%);
+  }
+
+  > #main {
+    width: calc(7 / 9 * 100%);
+  }
+  @include sp {
+    flex-direction: column;
+    padding: 4vw;
+
+    > #sidebar {
+      width: 100%;
+    }
+
+    > #main {
+      width: 100%;
+    }
+  }
+}

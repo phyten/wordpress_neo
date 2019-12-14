@@ -1,0 +1,19 @@
+$link-color: #009D8E;
+
+html {
+  background-color: $base-color;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+}
+
+* {
+  box-sizing: inherit;
+}
+
+a,a:hover,a:visited {
+  color: $link-color;
+}

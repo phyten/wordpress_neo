@@ -1,0 +1,126 @@
+// compass
+
+// @import "compass";
+
+// Variables;
+
+$base-color: #fff;
+
+// Mix-in
+
+@mixin center-with-flex() {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+// external import
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500&display=swap&subset=japanese");
+@import url("https://fonts.googleapis.com/css?family=Turret+Road:400,500,700&display=swap");
+
+// ------------------------------------
+// Foundation
+// ------------------------------------
+
+@import 'foundation/settings';
+@import 'foundation/reset';
+@import 'foundation/base';
+
+// ------------------------------------
+// Layout
+// ------------------------------------
+// example...
+@import 'layout/header';
+@import 'layout/header-navigation';
+@import 'layout/top-cover';
+@import 'layout/main-content';
+@import 'layout/contact-footer';
+@import 'layout/footer';
+
+// ------------------------------------
+// Object
+// ------------------------------------
+
+// Component
+.logo-box {
+  height: 97px;
+  margin: 0 auto;
+  width: 170px;
+
+  > img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.navigations-box {
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+
+  > .item {
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 2.5rem 0;
+    text-align: center;
+    width: calc(100% / 5);
+    &:hover {
+      margin: -4px;
+      border-bottom: 4px solid $link-color;
+    }
+  }
+}
+
+.cover-image__box {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  > .cover-image__content {
+    width: 100%;
+  }
+}
+
+.frame-heading {
+  margin-bottom: 2rem;
+  @at-root {
+    #{&}--top {
+      font-size: 2.6rem;
+      line-height: 3.5rem;
+      font-weight: bold;
+
+    }
+    #{&}--second {
+      font-size: 2.2rem;
+      font-weight: bold;
+
+    }
+    #{&}--yellow {
+      color: #FFBE00;
+
+    }
+    #{&}--sidebar {
+      font-size: 1.8rem;
+      line-height: 2.6rem;
+      font-weight: bold;
+
+    }
+  }
+}
+
+.frame-sentence {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  text-indent: 1rem;
+
+  @at-root {
+    #{&}--last {
+      margin-bottom: 2.8rem;
+    }
+  }
+}

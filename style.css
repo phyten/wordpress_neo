@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500&display=swap&subset=japanese");
+@import url("https://fonts.googleapis.com/css?family=Turret+Road:400,500,700&display=swap");
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+html {
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 62.5%; }
+
+* {
+  box-sizing: inherit; }
+
+a, a:hover, a:visited {
+  color: #009D8E; }
+
+#header {
+  height: auto;
+  width: 100%;
+  margin: 0 auto; }
+
+#header-navigation {
+  height: auto;
+  width: 100%;
+  margin: 0 auto; }
+
+#top-cover {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  background-image: url("images/bg-cover.png"); }
+
+#main-content {
+  height: auto;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0 auto; }
+  #main-content > #sidebar {
+    width: calc(2 / 9 * 100%); }
+  #main-content > #main {
+    width: calc(7 / 9 * 100%); }
+  @media (max-width: 480px) {
+    #main-content {
+      flex-direction: column;
+      padding: 4vw; }
+      #main-content > #sidebar {
+        width: 100%; }
+      #main-content > #main {
+        width: 100%; } }
+
+#contact-footer {
+  height: auto;
+  width: 100%;
+  margin: 0 auto; }
+
+#footer {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  margin: 0 auto; }
+
+.logo-box {
+  height: 97px;
+  margin: 0 auto;
+  width: 170px; }
+  .logo-box > img {
+    height: 100%;
+    width: 100%; }
+
+.navigations-box {
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%; }
+  .navigations-box > .item {
+    font-size: 1.5rem;
+    height: 100%;
+    padding: 2.5rem 0;
+    text-align: center;
+    width: calc(100% / 5); }
+    .navigations-box > .item:hover {
+      margin: -4px;
+      border-bottom: 4px solid #009D8E; }
+
+.cover-image__box {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; }
+  .cover-image__box > .cover-image__content {
+    width: 100%; }
+
+.frame-heading {
+  margin-bottom: 2rem; }
+  .frame-heading--top {
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    font-weight: bold; }
+
+  .frame-heading--second {
+    font-size: 2.2rem;
+    font-weight: bold; }
+
+  .frame-heading--yellow {
+    color: #FFBE00; }
+
+  .frame-heading--sidebar {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: bold; }
+
+.frame-sentence {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  text-indent: 1rem; }
+  .frame-sentence--last {
+    margin-bottom: 2.8rem; }
+
+/*# sourceMappingURL=style.css.map */
