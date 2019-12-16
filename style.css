@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:300,400,500&display=swap&subset=japanese");
 @import url("https://fonts.googleapis.com/css?family=Turret+Road:400,500,700&display=swap");
 /*
@@ -161,9 +162,12 @@ a, a:hover, a:visited {
     width: 100%; }
 
 .navigations-box {
-  align-items: stretch;
+  /* flex関連の記述 */
   display: flex;
+  align-items: stretch;
+  /*縦の揃え*/
   justify-content: space-between;
+  /*横の揃え*/
   margin: 0 auto;
   max-width: 900px;
   width: 100%; }

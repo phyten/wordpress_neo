@@ -5,6 +5,7 @@
 // Variables;
 
 $base-color: #fff;
+$base-max-width: 900px;
 
 // Mix-in
 
@@ -54,11 +55,12 @@ $base-color: #fff;
 }
 
 .navigations-box {
-  align-items: stretch;
+  /* flex関連の記述 */
   display: flex;
-  justify-content: space-between;
+  align-items: stretch;         /*縦の揃え*/
+  justify-content: space-between; /*横の揃え*/
   margin: 0 auto;
-  max-width: 900px;
+  max-width: $base-max-width;
   width: 100%;
 
   > .item {
@@ -67,6 +69,7 @@ $base-color: #fff;
     padding: 2.5rem 0;
     text-align: center;
     width: calc(100% / 5);
+
     &:hover {
       margin: -4px;
       border-bottom: 4px solid $link-color;
@@ -76,7 +79,7 @@ $base-color: #fff;
 
 .cover-image__box {
   width: 100%;
-  max-width: 900px;
+  max-width: $base-max-width;
   margin: 0 auto;
 
   > .cover-image__content {
